@@ -112,7 +112,7 @@ describe('AllocationComponent', () => {
     it('item_name field validity', () => {
       let errors = {};
       let alloacated_to = component.allocationForm.controls['alloacated_to'];
-      expect(alloacated_to.valid).toBeTruthy();
+      expect(alloacated_to.valid).toBeFalsy();
 
       // errors = alloacated_to.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -126,7 +126,7 @@ describe('AllocationComponent', () => {
     it('item field validity', () => {
       let errors = {};
       let item = component.allocationForm.controls['item'];
-      expect(item.valid).toBeTruthy();
+      expect(item.valid).toBeFalsy();
 
       // errors = item.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -140,7 +140,7 @@ describe('AllocationComponent', () => {
     it('item_description field validity', () => {
       let errors = {};
       let item_description = component.allocationForm.controls['item_description'];
-      expect(item_description.valid).toBeTruthy();
+      expect(item_description.valid).toBeFalsy();
 
       // errors = item_description.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -154,7 +154,7 @@ describe('AllocationComponent', () => {
     it('project field validity', () => {
       let errors = {};
       let project = component.allocationForm.controls['project'];
-      expect(project.valid).toBeTruthy();
+      expect(project.valid).toBeFalsy();
 
       // errors = project.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -168,7 +168,7 @@ describe('AllocationComponent', () => {
     it('allocation_date field validity', () => {
       let errors = {};
       let allocation_date = component.allocationForm.controls['allocation_date'];
-      expect(allocation_date.valid).toBeTruthy();
+      expect(allocation_date.valid).toBeFalsy();
 
       // errors = allocation_date.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -182,7 +182,7 @@ describe('AllocationComponent', () => {
     it('po_no field validity', () => {
       let errors = {};
       let po_no = component.allocationForm.controls['po_no'];
-      expect(po_no.valid).toBeTruthy();
+      expect(po_no.valid).toBeFalsy();
 
       // errors = po_no.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -196,7 +196,7 @@ describe('AllocationComponent', () => {
     it('po_amount field validity', () => {
       let errors = {};
       let po_amount = component.allocationForm.controls['po_amount'];
-      expect(po_amount.valid).toBeTruthy();
+      expect(po_amount.valid).toBeFalsy();
 
       // errors = po_amount.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -210,7 +210,7 @@ describe('AllocationComponent', () => {
     it('start_date field validity', () => {
       let errors = {};
       let start_date = component.allocationForm.controls['start_date'];
-      expect(start_date.valid).toBeTruthy();
+      expect(start_date.valid).toBeFalsy();
 
       // errors = start_date.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -224,7 +224,7 @@ describe('AllocationComponent', () => {
     it('end_date field validity', () => {
       let errors = {};
       let end_date = component.allocationForm.controls['end_date'];
-      expect(end_date.valid).toBeTruthy();
+      expect(end_date.valid).toBeFalsy();
 
       // errors = end_date.errors || {};
       // expect(errors["required"]).toBeTruthy();

@@ -92,7 +92,7 @@ describe('ItemsComponent', () => {
     it('item_name field validity', () => {
       let errors = {};
       let item_name = component.itemsForm.controls['item_name'];
-      expect(item_name.valid).toBeTruthy();
+      expect(item_name.valid).toBeFalsy();
 
       // errors = item_name.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -106,7 +106,7 @@ describe('ItemsComponent', () => {
     it('item_type field validity', () => {
       let errors = {};
       let item_type = component.itemsForm.controls['item_type'];
-      expect(item_type.valid).toBeTruthy();
+      expect(item_type.valid).toBeFalsy();
 
       // errors = item_type.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -120,7 +120,7 @@ describe('ItemsComponent', () => {
     it('item_description field validity', () => {
       let errors = {};
       let item_description = component.itemsForm.controls['item_description'];
-      expect(item_description.valid).toBeTruthy();
+      expect(item_description.valid).toBeFalsy();
 
       // errors = item_description.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -134,7 +134,7 @@ describe('ItemsComponent', () => {
     it('item_cost field validity', () => {
       let errors = {};
       let item_cost = component.itemsForm.controls['item_cost'];
-      expect(item_cost.valid).toBeTruthy();
+      expect(item_cost.valid).toBeFalsy();
 
       // errors = item_cost.errors || {};
       // expect(errors["required"]).toBeTruthy();

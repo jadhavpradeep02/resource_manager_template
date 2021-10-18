@@ -87,7 +87,7 @@ describe('ProjectsComponent', () => {
     it('project_name field validity', () => {
       let errors = {};
       let project_name = component.projectForm.controls['project_name'];
-      expect(project_name.valid).toBeTruthy();
+      expect(project_name.valid).toBeFalsy();
 
       // errors = project_name.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -101,7 +101,7 @@ describe('ProjectsComponent', () => {
     it('project_description field validity', () => {
       let errors = {};
       let project_description = component.projectForm.controls['project_description'];
-      expect(project_description.valid).toBeTruthy();
+      expect(project_description.valid).toBeFalsy();
 
       // errors = project_description.errors || {};
       // expect(errors["required"]).toBeTruthy();
@@ -115,7 +115,7 @@ describe('ProjectsComponent', () => {
     it('project_start_date field validity', () => {
       let errors = {};
       let project_start_date = component.projectForm.controls['project_start_date'];
-      expect(project_start_date.valid).toBeTruthy();
+      expect(project_start_date.valid).toBeFalsy();
 
       // errors = project_start_date.errors || {};
       // expect(errors["required"]).toBeTruthy();
