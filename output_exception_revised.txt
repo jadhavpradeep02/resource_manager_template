@@ -1,0 +1,4 @@
+itemscomponentExceptionShouldBeCheckItemsApi=true
+allocationcomponentExceptionShouldBeCheckAllocationApi=true
+userscomponentExceptionShouldBeCheckUsersApi=true
+projectscomponentExceptionShouldBeCheckItemsApi=true

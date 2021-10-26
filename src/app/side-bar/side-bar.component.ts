@@ -15,12 +15,19 @@ export class SideBarComponent implements OnInit {
   }
 
   showAllocations() {
+    this.router.navigate(['/allocation']);
   }
 
   showItems() {
+    this.router.navigate(['/items']);
   }
 
   showProjects() {
+    this.router.navigate(['/projects']);
+  }
+
+  showUsers() {
+    this.router.navigate(['/users']);
   }
 
 }

@@ -10,16 +10,16 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class AllocationService {
+export class UserService {
   public static BaseUrl = "http://localhost:3000/";
 
   constructor(private http: HttpClient) { }
 
-  getAllocationData() {
-    return this.http.get(AllocationService.BaseUrl+'allocations', httpOptions).pipe(map((response) => response))
+  getUsersData() {
+    return this.http.get(UserService.BaseUrl+'employees', httpOptions).pipe(map((response) => response))
   }
 
-  postAllocationdata(data: any){
-    return this.http.post(AllocationService.BaseUrl+'allocations',data,httpOptions).pipe(map((response) => response));
+  postUsersdata(data: any){
+    return this.http.post(UserService.BaseUrl+'employees',data,httpOptions).pipe(map((response) => response));
   }
 }

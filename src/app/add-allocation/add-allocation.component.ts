@@ -18,11 +18,12 @@ export class Allocation {
 }
 
 @Component({
-  selector: 'app-allocation',
-  templateUrl: './allocation.component.html',
-  styleUrls: ['./allocation.component.scss']
+  selector: 'app-add-allocation',
+  templateUrl: './add-allocation.component.html',
+  styleUrls: ['./add-allocation.component.scss']
 })
-export class AllocationComponent implements OnInit {
+export class AddAllocationComponent implements OnInit {
+
   @Output() allocationsdata = new EventEmitter<Allocation>();
   allocationData: any;
   allocationForm!: FormGroup;
@@ -34,9 +35,12 @@ export class AllocationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openAllocation() {
+  onSubmit() {
   }
 
-  export() {
+  cancel() {
+  }
+
+  addAllocation(){
   }
 }

@@ -1,7 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ItemsService } from '../services/items.service';
-
+import { Router } from '@angular/router';
 export class Items {
   constructor(
     public item_name: string,
@@ -17,18 +16,12 @@ export class Items {
   styleUrls: ['./items.component.scss']
 })
 export class ItemsComponent implements OnInit {
-
-  @Output() itemsdata = new EventEmitter<Items>();
   itemData: any;
-  itemsForm!: FormGroup;
-  public obj: any = {};
+  title = "Manage Item";
 
-  constructor(private itemsService: ItemsService, private fb: FormBuilder) { }
+  constructor(private itemsService: ItemsService, private router: Router) { }
 
   ngOnInit(): void {
-  }
-
-  onSubmit() {
   }
 
   openItem() {
@@ -37,6 +30,6 @@ export class ItemsComponent implements OnInit {
   export(){
   }
 
-  deleterow(){
+  deleterow(id) {
   }
 }

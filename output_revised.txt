@@ -1,0 +1,4 @@
+addprojectcomponentBusinessShouldSubmitForm=false
+additemcomponentBusinessShouldSubmitForm=false
+addallocationcomponentBusinessShouldSubmitForm=false
+addusercomponentBusinessShouldSubmitForm=false

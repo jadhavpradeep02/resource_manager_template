@@ -1,7 +1,7 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ProjectsService } from '../services/projects.service';
-import { Router } from '@angular/router';
 
 export class Project {
   constructor(
@@ -12,29 +12,28 @@ export class Project {
 }
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  selector: 'app-add-project',
+  templateUrl: './add-project.component.html',
+  styleUrls: ['./add-project.component.scss']
 })
-export class ProjectsComponent implements OnInit {
+export class AddProjectComponent implements OnInit {
 
   @Output() projectdata = new EventEmitter<Project>();
   projectsData: any;
   projectForm!: FormGroup;
   public obj: any = {};
-  title = "Manage Project";
 
   constructor(private projectService: ProjectsService, private fb: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  openProject() {
+  cancel() {
   }
 
-  export() {
+  onSubmit() {
   }
 
-  deleterow(id) {
+  addProject(){
   }
 }

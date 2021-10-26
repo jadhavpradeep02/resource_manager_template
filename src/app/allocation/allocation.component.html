@@ -1,1 +1,13 @@
-<div>Allocation Component</div>
+<div>
+    <div class="btn-tray">   
+        <button id="new_allocation" class="btn btn-primary" (click)="openAllocation()">New Allocation</button>&nbsp;
+        <button id="export" class="btn btn-primary" (click)="export()">Export</button>
+    </div>
+
+    <div class="header">
+        <h1>{{title}}</h1>
+    </div>
+
+    <div class="allocation-table">
+    </div>
+</div>
